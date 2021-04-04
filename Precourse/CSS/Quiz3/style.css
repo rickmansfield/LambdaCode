@@ -1,0 +1,61 @@
+
+h1, h2, h3, h4, p, li {
+    color: black;
+    font-family: sans-serif;
+    width:80%
+}
+
+button {
+    color: white;
+    background-color:#BB2026;
+    font-size: 16px;
+    /* border: 0px; */
+    padding: 10px;
+    height: auto;
+}
+
+#image-container {
+    background-image: url('images/red62.jpg'); 
+    background-repeat: no-repeat;
+    padding: 50px;
+    max-height: 100%;
+    max-width: 100%;
+    background-position: right;
+    box-shadow: 3px 3px 10px;
+}
+
+span {
+    font:bolder;
+    color: green;
+}
+
+#proficiencies {
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px;
+
+}
+
+#work-examples {
+    border: 3px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px;
+}
+
+.italics{
+    font: italic;
+}
+
+.grey-background-1 {
+    background-color: rgb(190, 192, 194);
+    padding: 5px;
+    margin-block: 10px;
+    box-shadow: 3px 3px 10px;
+}
+
+.grey-alternate {
+    padding: 5px;
+    box-shadow: 3px 3px 10px;
+}
