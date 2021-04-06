@@ -16,7 +16,7 @@ function exampleExercise(value){
     // In this exercise, you will be given a variable, it will be called: value
     // On the next line create a variable called 'greaterThan' and using a comparison operator, check to see if value is greater than 5.
     // Assign the results of that to 'greaterThan'
-    
+    let greaterThan = value > 5; 
     
     // Please write your answer in the line above.
     return greaterThan;
@@ -26,7 +26,7 @@ function exampleExercise(value){
     // In this exercise, you will be given a variable, it will be called: value
     // On the next line create a variable called 'lessThan' and using a comparison operator, check to see if value is less than 20.
     // Assign the results of that to 'lessThan'
-    
+    let lessThan = value < 20;
     
     // Please write your answer in the line above.
     return lessThan;
@@ -36,7 +36,7 @@ function exampleExercise(value){
     // In this exercise, you will be given a variable, it will be called: value
     // On the next line create a variable called 'equalTo' and using a comparison operator, check to see if value is equal to 37.
     // Assign the results of that to 'equalTo'
-    
+    let equalTo = value === 37
     
     // Please write your answer in the line above.
     return equalTo;
@@ -47,7 +47,9 @@ function exampleExercise(value){
     // In this exercise, you will be given a variable, it will be called: value
     // You will also be given a variable named: greaterThanFive
     // Using an 'if' statement check to see if the value is greater than 5. If it is, re-assign greaterThanFive the boolean true.
-    
+    if (value > 5) {
+      greaterThanFive = true;
+    }
     
     // Please write your answer in the line above.
     return greaterThanFive;
@@ -58,7 +60,9 @@ function exampleExercise(value){
     // In this exercise, you will be given a variable, it will be called: name
     // You will also be given a variable named: isSondra
     // Using an 'if' statement check to see if the name is equal to the string 'Sondra'. If it is, re-assign isSondra the boolean true.
-    
+    if (name === 'Sondra'){
+      isSondra = true;
+    }
     
     // Please write your answer in the line above.
     return isSondra;
