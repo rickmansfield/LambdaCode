@@ -1,0 +1,31 @@
+#home-page-image {
+    background: url("https://assets-global.website-files.com/5cd091cfb5499f22bdf72905/5d1133da829994859a190d12_website-home4.jpg");
+    padding: 200px;
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+  
+  
+  h1, h2, p, #home-page-text {
+    color: black;
+    font-family: sans-serif;
+  }
+  
+  #home-page-text {
+    width: 50%;
+  }
+  
+  #other-text {
+    text-align: center;
+  }
+  
+  button {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #BB2026;
+    border: 0px;
+    padding: 12px;
+  }
+  
+  
