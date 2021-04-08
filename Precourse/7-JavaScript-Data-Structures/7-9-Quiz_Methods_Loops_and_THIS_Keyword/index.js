@@ -5,7 +5,9 @@ function exerciseOne(){
     // and it should return that number multiplied by two.
     let mathHelpers = {
       // Create double method in here.
-      
+      double: function(number){
+        return number *2;
+      }
     };
     return mathHelpers;
   }
@@ -20,8 +22,11 @@ function exerciseOne(){
   // NOTE: DO NOT create a new object.
   // NOTE: DO NOT create a key called name the key is already on the object.
   
-  
+  userObj.greeting = function(){
+    return "Hi, my name is " + this.name;
+  };
   
     // Please write all of your code on the lines above.
     return userObj;
   }
+  console.log("What the heck");

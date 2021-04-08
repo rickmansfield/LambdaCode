@@ -10,6 +10,6 @@ const greatWhiteShark = {
         let scientificName = this.myGenus + ' ' + this.mySpecies;
         return(scientificName);
     }
-}
+};
 
 console.log(greatWhiteShark.getScientificName());
