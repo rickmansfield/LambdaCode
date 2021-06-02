@@ -1,0 +1,28 @@
+body{
+    color: green;
+    }
+    .lions{
+    color: red;
+    }
+    .bears{
+    color: blue;
+    }
+
+    .mytest{ background:blue; padding:20px; margin:15px; border:10px solid red; }
+
+    .mybox1{
+        background-color: lightgrey;
+        border: 50px;
+    }
+    .mybox2 {
+        background-color: lightgrey;
+        content: 50px;
+    }
+    .mybox3 {
+        background-color: lightgrey;
+        padding: 50px;
+    }
+    .mybox4 {
+        background-color: lightgrey;
+        margin: 50px;
+    }
