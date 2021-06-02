@@ -10,7 +10,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	/* border: 0; */
+	border: 0;
 	}
 /* remember to define focus styles! */
 :focus {
@@ -43,16 +43,17 @@ blockquote:before, blockquote:after, q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 	}
+    
+/* general Brit Hemming Styles */
 
 *{
     box-sizing: border-box;
     padding:0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 
-/* general Brit Hemming Styles */
 html{
     font-size: 62.5%;
 }
@@ -63,11 +64,13 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 h1{
-    font-family: 'Chealsea Market', cursive;
-    font-size: 5rem;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 6rem;
 }
 section{
     padding: 4% 0;
+    width: 90%;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -83,6 +86,11 @@ nav a{
     border-radius: 10px; 
     text-align: center;
     color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: black;
+
 }
 .orange{
     background-color: #FF764E;
@@ -94,27 +102,31 @@ nav a{
 }
 .yellow{
     background-color: #FFCD69;
-    margin-right: 5%;
+    margin-right: 10%;
 }
 /* Top Sections Styles */
 .top{
     position: relative;
-}
-.left img{
-    border-radius: 50%;
-    width: 70%;
-}
+} 
+/* the code above ensures the elements (example: with .right class) "floats" relative to the rest of the elements*/
+
 .left, .right{
     display: inline-block;
     text-align: center;
 }
+.left img{
+    border-radius: 50%;
+    width: 65%;
+}
 .left{
-    width: 40%;
+    width: 30%;
 }
 .right{
-    width:45%;
+    width:55%;
     margin-left: 3%;
-    position:arelative;
+    text-align:center;
+    line-height: 3;
+    position:relative;
     top:40;
     
 }
@@ -126,4 +138,30 @@ nav a{
     background-size: cover;
     background-position: top;
 
+}
+/* main area  */
+.mainText{
+    background-color: #DDB9A3;
+    color:white;
+    padding:2%;
+}
+.fireAndCamper{
+    width:30%;
+    margin:5% auto;
+}
+.bold{
+    font-weight:bold;
+}
+
+/* Footer Styles */
+.backgroundImage{
+    background-image: url('assets/footer_img.jpg');
+    height:40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width:100%;
+}
+footer{
+    background-color:#F9E7DC;
 }
