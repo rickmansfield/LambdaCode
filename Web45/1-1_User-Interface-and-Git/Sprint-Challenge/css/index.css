@@ -75,17 +75,28 @@ p {
 nav{
     
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:flex-end;
 }
-.links{
+.links {
+    width:40%;
     display: flex;
-    flex-direction: row;
-    
+    justify-content: space-evenly;
+
 }
 .logo{
     width: 10%;
 }
+.heroimg{
+    background-image: url('../images/dirt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 40vh;
+
+}
+/* Other prewritten CSS Starts here */
 
 .container {
     width: 800px;
