@@ -94,6 +94,13 @@ nav{
     height: 20vh;
     margin: 2%;
 }
+.about-img{
+    background-image: url('../img/jumbo-about.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    margin: 2%;
+}
 /* Other prewritten CSS Starts here */
 
 .container {
