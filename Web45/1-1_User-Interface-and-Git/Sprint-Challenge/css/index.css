@@ -121,7 +121,18 @@ nav{
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+/* Rick's About Page additional Styles */
+.top-content h2{
+    margin: 2% 0;
+}
+.top-content p{
+    margin: 2% 0;
+}
+.top-content a{
+    border-radius: 20%;
+}
 
+/* Prewritten styles continue below */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
