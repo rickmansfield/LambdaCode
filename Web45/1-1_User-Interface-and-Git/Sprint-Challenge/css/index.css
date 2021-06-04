@@ -71,7 +71,10 @@ p {
     line-height: 1.4;
 }
 
-/* Header Styles */
+/* Rick's Header Styles */
+header{
+    margin: 1%;
+}
 nav{
     
     display: flex;
@@ -101,7 +104,7 @@ nav{
     height: 20vh;
     margin: 2%;
 }
-/* Other prewritten CSS Starts here */
+/* Prewritten styles cont... */
 
 .container {
     width: 800px;
@@ -121,18 +124,38 @@ nav{
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
 /* Rick's About Page additional Styles */
+
+.about-info{
+    border-bottom: 1px dashed black;
+    margin-bottom: 2%;
+}
+.about-info p{
+    margin-bottom: 2%;
+}
 .top-content h2{
     margin: 2% 0;
 }
 .top-content p{
-    margin: 2% 0;
+    margin: 4% 0;
+    padding: 2% 0;;
 }
 .top-content a{
-    border-radius: 20%;
+    border-radius: 15%;
+    border: 2px solid black;
+    padding: 2% 4%;
+    font-size: 12px;
+}
+#top-about{
+    border-bottom: 0px dashed white;
+}
+#text-about{
+    border-bottom: 1px dashed black;
 }
 
-/* Prewritten styles continue below */
+
+/* Prewritten styles cont... */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -159,7 +182,7 @@ nav{
     align-items: center;
     justify-content: center;
 }
-/* BOX COLORS */
+/* Rick's BOX COLORS */
 #box-one{
     background-color: teal;
 }
@@ -190,7 +213,7 @@ nav{
 #box-ten{
     background-color: dodgerblue;
 }
-
+/* prewritten styles cont... */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -204,6 +227,12 @@ nav{
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+/* Ricks bottom-about Styles */
+.bottom-content h2{
+    padding-top: 2%;
+}
+
+/* prewritten styles cont... */
 
 footer {
     width: 100%;
