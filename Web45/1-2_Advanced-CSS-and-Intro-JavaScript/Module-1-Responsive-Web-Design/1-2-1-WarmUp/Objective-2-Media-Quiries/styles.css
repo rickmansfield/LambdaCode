@@ -1,0 +1,49 @@
+/*
+
+  Example media query: 
+  
+  @media (max-width: 1000px) {
+    .box1 {
+      width: 60%;
+    }
+  }
+
+  /* At 768px And below do the following: */
+/*   @media (max-width: 768px) {
+   
+  } */
+
+  /* At 400px And below do the following: */
+/*   @media (max-width: 400px) {
+    
+  } */
+
+
+
+
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box1 {
+    background: aqua;
+  }
+  
+  .box2 {
+    background: azure;
+  }
+  
+  .box3 {
+    background: cadetblue;
+  }
+  
+   /* At 768px And below do the following: */
+    @media (max-width: 768px) {
+      .box1 {
+        background: brown;
+        width: 400px;
+      }
+    }
+  
+  

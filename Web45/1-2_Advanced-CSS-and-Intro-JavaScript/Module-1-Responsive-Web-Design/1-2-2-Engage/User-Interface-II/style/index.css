@@ -224,3 +224,15 @@ footer button{
 footer button:hover{
 	background-color: green;
 }
+@media (max-width: 800px) {
+	.bio-container {
+	  background: rgb(189, 189, 146);
+	}
+  }
+
+  @media (max-width: 500px) {
+	.bio-container {
+	  background: rgb(124, 124, 64);
+	  color: bisque;
+	}
+  }
