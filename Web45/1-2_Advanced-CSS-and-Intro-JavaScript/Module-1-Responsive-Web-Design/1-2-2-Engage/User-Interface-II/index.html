@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Viewport meta tag sets up mobile browers to read media queies -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--Link to google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -14,7 +14,9 @@
 </head>
 <body>
     <header id="veryTop">
-        <h1>Rick Mansfield</h1>
+        <div>
+            <h1>Rick Mansfield</h1>
+        </div>
         <nav>
             <a href="#veryTop">Home</a>
             <a href="#about">About</a>
@@ -28,20 +30,27 @@
         </div>
         
         <div class="bio-container">
-            <h2>Rick Mansfield</h2>
-            <a id="project-link" href="./projects.html">My Projects</a>
-            <p>
-                <h3>Dear Visitor,</h3>
-                <p>Hello. Welcome to my Page.</p>
-                <p>Graduating with a 4.0 GPA, Summa Cum Laude, with honors demonstrates my dedication and determination.</p>
-                <p>If you like what you see, and would like a growth mindset team player working for you, then please contact me.</p>          
+            <div>
+                <h2>Rick Mansfield</h2>
+            </div>
+            <div>
+                <a id="project-link" href="./projects.html">My Projects</a>
+            </div>
+            <div>
+                    <h3>Dear Visitor,</h3>
+                    <p>Hello. Welcome to my Page.</p><br>
+                    <p>Graduating with a 4.0 GPA, Summa Cum Laude, with honors demonstrates my dedication and determination.</p><br>
+                    <p>If you like what you see, and would like a growth mindset team player working for you, then please contact me.<br>         
+    
+                    Sincerely<br>
+                    
+                    Rick Mansfield</p>
+            </div>
 
-                Sincerely<br>
-                
-                Rick Mansfield</p>
         </div>
     </section>
     <section id="projects">
+        <div class="container">
             <div class='card grey'>
                 <div class="images">
                     <img src="./images/RockPaperScisors.png" alt="Rick Mansfiel Bust Photo">
@@ -59,7 +68,8 @@
                     <button newtab onclick="window.open('https://rickmansfield.github.io/6-1-4_Project_Chore_Door/')";>Play Chore Door</button>
                 </div>
             </div>
-    
+        </div>
+        <div class="container">
             <div class='card grey'>
                 <div class="images">
                     <img src="./images/jammming.png" alt="Rick Mansfiel Bust Photo">
@@ -71,75 +81,82 @@
             
             <div class='card'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo"> 
+                    <img src="./images/DaviesBurgersBoxModel.png" alt="Rick Mansfiel Bust Photo"> 
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/Davies_Burgers_Box_Model/#')";>Davie's Home Page</button>
                 </div>
             </div>
-    
-            <div class='cad'>
+        </div>
+        <div class="container">
+            <div class='card grey'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo">
+                    <img src="./images/Davies-Menu.png" alt="Rick Mansfiel Bust Photo">
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/Davies_Burgers_Project/')";>Fill out Davie's Menu</button>
                 </div>
             </div>
     
-            <div class='grey-alternate'>
+            <div class='card'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo">
+                    <img src="./images/CopyCatJon.JPG" alt="Rick Mansfiel Bust Photo">
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/TheCopyCat/')";>Try Copy Cat</button>
                 </div>
             </div>
-    
-            <div class='grey-background-1'>
+        </div>
+        <div class="container">
+            <div class='card grey'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo">
+                    <img src="./images/BlogExample.png" alt="Rick Mansfiel Bust Photo">
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/Fashion_Blog/')";>Go To Sample Blog</button>
                 </div>
             </div>
     
-            <div class='grey-alternate'>
+            <div class='card'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo">
+                    <img src="./images/Excursion.png" alt="Rick Mansfiel Bust Photo">
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/Excursion_Project/')";> Try Excursion</button>
                 </div>
             </div>
-    
-            <div class='grey-background-1'>
+        </div>
+        <div class="container">
+            <div class='card grey'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo">
+                    <img src="./images/NumberGuesser.png" alt="Rick Mansfiel Bust Photo">
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/Number_Guesser_JavaScript/')";>Number Guesser</button>
                 </div>
             </div>
     
-            <div class='grey-alternate'>
+            <div class='card'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo">
+                    <img src="./images/FormAStory.png" alt="Rick Mansfiel Bust Photo">
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/Form-A-Story/')";>Form a Story</button>
                 </div>
             </div>
-    
-            <div class='grey-background-1'>
+        </div>
+
+        <div class="container">
+            <div class='card grey'>
                 <div class="images">
-                    <img src="./images/RickMansfield.PNG" alt="Rick Mansfiel Bust Photo">
+                    <img src="./images/JavaScriptClock.png" alt="Rick Mansfiel Bust Photo">
                 </div>
                 <div class="links">
                     <button newtab onclick="window.open('https://rickmansfield.github.io/JavaScript_CSS_HTML_Clock/')";>JavaScript Clock</button>
                 </div>
             </div>
+        </div>
+
     </section>
     <footer id="contact">
         <h3>Like what you see?</h3>
