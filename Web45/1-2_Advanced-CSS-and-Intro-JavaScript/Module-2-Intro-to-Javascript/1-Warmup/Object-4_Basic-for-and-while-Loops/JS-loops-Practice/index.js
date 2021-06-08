@@ -4,7 +4,7 @@ function exerciseTwo(){
     // It should loop 10 times and count by 2
     // Create a variable called count
     // For each loop reassign count to the current value of count + count such that your final `count` is 0 + 2 + 4 + 6 + ... = 90
-    for (let i = 0; i <=10; i+1) {
+    for (let i = 0; i <10; i++) {
         count += 2;
         console.log(count);
     }
@@ -12,7 +12,9 @@ function exerciseTwo(){
     //Please write your answer in the line above. 
     return count;
   }
-  console.log(exerciseTwo());
- 
+
+ exerciseTwo(); //logs all loop answers
+ //   console.log(exerciseTwo()); // logs only the final answer
+
   
   
