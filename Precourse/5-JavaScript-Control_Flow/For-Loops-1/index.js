@@ -22,10 +22,11 @@ function exerciseOne(){
         count += 1;
         //alternatively count++;
         //alternatively count = count + 1;
-        
+        console.log(count);
     }
     //Please write your answer in the line above. 
     return count;
     
+    
   }
-  
+  console.log(exerciseTwo());
