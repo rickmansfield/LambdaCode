@@ -65,7 +65,31 @@ const friends = [
   { name: 'Joey', gender: 'M' },
   { name: 'Rachel', gender: 'M' }
 ];
+const femaleFriends = [];
+const maleFriends = [];
+for (let i = 0; i < friends.length; i++){
+  if(friends[i].gender === 'F'){
+    femaleFriends.push(friends[i].name);
+  } else if (friends[i].gender === 'M'){
+    maleFriends.push(friends[i].name);
+  }
+}
 
-const femaleFriends = friends; // finish this
-const male = friends; // finish this
+console.log(femaleFriends);
+console.log(maleFriends);
 
+function copy(originalArray){
+    const newFlavorsList = [...originalArray];
+    console.log(newFlavorsList);
+}
+copy(originalFlavors);
+
+
+function is31Flavors(anyArray){
+   if (anyArray.length === 31){
+       return true;
+//    } else {
+//        return false;
+//    }
+}
+console.log(is31Flavors(originalFlavors));
