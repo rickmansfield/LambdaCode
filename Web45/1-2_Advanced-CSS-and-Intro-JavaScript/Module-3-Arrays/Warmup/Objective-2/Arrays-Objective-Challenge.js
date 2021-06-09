@@ -21,6 +21,12 @@
 
 const justiceLeague = ['Robin', 'Batman', 'Wonder Woman', 'Flash', 'Aquaman'];
 
+justiceLeague.shift('Robin');
+
+justiceLeague.push('Green Lantern');
+
+justiceLeague.unshift('Superman');
+console.log(justiceLeague);
 
 
 /* 
@@ -30,7 +36,8 @@ const justiceLeague = ['Robin', 'Batman', 'Wonder Woman', 'Flash', 'Aquaman'];
 
 const middleEarth = ['Frodo', 'Samwise', 'Gandalf', 'Sauraman', 'Treebeard'];
 
-
+middleEarth.splice(3,1);
+console.log(middleEarth);
 
 /* 
   Problem 3: Numbers
@@ -38,6 +45,8 @@ const middleEarth = ['Frodo', 'Samwise', 'Gandalf', 'Sauraman', 'Treebeard'];
 */
 
 const numbers = [2, 3, 4, 5, 6];
+const map1 = numbers.map(x => x*10);
+console.log(map1);
 
 
 
