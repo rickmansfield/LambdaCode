@@ -1,5 +1,5 @@
 // Create a function to console.log the steps to your favorite recipie
-functio recipies() {
+function recipies() {
     console.log('steps here');
     
 }

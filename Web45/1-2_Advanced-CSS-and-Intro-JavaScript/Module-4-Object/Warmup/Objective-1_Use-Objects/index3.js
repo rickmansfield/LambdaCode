@@ -15,8 +15,14 @@
   return an array of an Objects properties/keys
 */
 
-const student = { name: 'Jonas', age: '12', gender: 'M', role: 'Receiver' };
-// const studentKeys = Object; // finish this.
+const student = { 
+  name: 'Jonas', 
+  age: '12', 
+  gender: 'M', 
+  role: 'Receiver' 
+};
+
+const studentKeys = Object; // finish this.
 console.log(Object.keys(student));
 
 
@@ -28,6 +34,7 @@ console.log(Object.keys(student));
 */
 
 const studentValues = Object; // finish this.
+console.log(Object.values(student));
 
 /* 
   Problem 3: Giver Info
@@ -39,3 +46,26 @@ const studentValues = Object; // finish this.
 */
 
 const listOfChars = student.characters; // finish this.
+student.listOfChars = ['Lily', 'Mother', 'Father', 'Caleb', 'Asher'];
+
+console.log(student);
+
+
+for (let i=0; i<student.listOfChars.length; i++){
+  console.log(student.listOfChars[i]);
+}
+// Trying forEach loop... 
+// student.listOfChars.forEach(listOfChars[i] => console.log(listOfChars[i]));
+
+
+// NEXT CHALLENGE add a method called greet to the student object to console.log() "My name is Jonas and I'm a receiver. I'm 12 years old." This should work for any student name, age, and role. There are multiple ways to do this, but ultimately, running student.greet() should produce the sentence above.
+
+
+// note this answer is correct but will only run in codepen as is. https://codepen.io/peacefulrick/pen/BaWObNO?editors=0011
+student.greet = function(){
+  return `My name is ${this.name} and I'm a ${this.role}. I'm ${this.age} years old.`;
+};
+
+
+// console.log(student);
+console.log(student.greet());
