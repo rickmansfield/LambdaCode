@@ -21,7 +21,7 @@ function totalGameScore(scorecb, gamecb){
         const currentScore = gamecb(scorecb);
         homeScore = homeScore + currentScore.Home;
         awayScore = awayScore + currentScore.Away;
-        totalGame.push(`perriod ${i + 1}: Away: ${currentScore.Away} - Home: ${currentScore.home}`);
+        totalGame.push(`perriod ${i + 1}: Away: ${currentScore.Away} - Home: ${currentScore.Home}`);
     }
     return totalGame;
 }
