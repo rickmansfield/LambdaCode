@@ -25,6 +25,7 @@ During the creation phase, the JavaScript engine moves the variable and function
 - Variable Declaration Hoisting
 - Function Declaration Hoisting
 - var is hoisted... but let and const are NOT
+- arrow functions are NOT hoisted
 
 
 Closures:
