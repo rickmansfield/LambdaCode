@@ -5,11 +5,14 @@ const counter = () => {
     // newCounter(); // 2
     let count = 0;
     return function(){
-        count = count +1;
-        return count;
+        // count = count +1;
+        // return count;
+        return ++count;//refactored from prior two lines
     };
   };
 
   const newCounter = counter();
-  console.log(newCounter);
-  console.log(newCounter);
+  console.log(newCounter());
+  console.log(newCounter());
+  console.log(newCounter());
+  console.log(newCounter());
