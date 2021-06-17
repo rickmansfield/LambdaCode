@@ -24,18 +24,19 @@ class Pet{
 
 
 //Creating a child E011 syntax
-function Child(attributes){
-    Pet.call(this, attributes);
-    //any special attributes for child go here. 
-}
-Child.prototype = Object.create(Pet.prototype);
+// function Child(attributes){
+//     Pet.call(this, attributes);
+//     //any special attributes for child go here. 
+// }
+// Child.prototype = Object.create(Pet.prototype);
 
 //Converted to ES6 Class sytax
 class Child extends Pet{ //tells child parent is pet
     constructor(attributes){
         super(attributes);
-        this.
+        //any special methods for the child go here
     }
+    //any apecial method go here. 
 }
 
 //invoke our constructor functions here
