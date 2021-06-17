@@ -1,3 +1,7 @@
+// Breakout (the old way)
+// create a pet constructor with a name location and phrase as attributes and a speak method that returns: name says phrase 
+// the create a baby pet that has the ability to speak and play the baby pet should also have a toy. The play method should return name plays with their toy
+
 // old way
 // function Pet(attributes){
 //     this.name = attributes.name;
@@ -14,7 +18,7 @@ class Pet{
         this.name = attributes.name;
         this.location = attributes.location;
         this.phrase = attributes.phrase;
-    }//methods go here
+    }//methods go here with special syntax
     speak (){
         return `${this.name} says ${this.phrase}`;
     }
