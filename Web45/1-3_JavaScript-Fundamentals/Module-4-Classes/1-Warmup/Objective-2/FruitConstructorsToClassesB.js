@@ -4,52 +4,85 @@
 //   this.isRipe = attrs.isRipe;
 //   this.calories = attrs.calories;
 // }
+
+// Fruit.prototype.shipped = function(destination) {
+//   console.log(`Shipping ${this.name} to ${destination}`);
+// };
+
+// Fruit.prototype.calculateCals = function() {
+//   console.log(`Calories in ${this.name} are ${this.calories * 200}`);
+// };
 class Fruit{
-  constructor(){
+  constructor(attrs){
   this.type = attrs.type;
   this.name = attrs.name;
   this.isRipe = attrs.isRipe;
   this.calories = attrs.calories;
   }
-  shipped
-}
-
-Fruit.prototype.shipped = function(destination) {
-  console.log(`Shipping ${this.name} to ${destination}`);
-};
-
-Fruit.prototype.calculateCals = function() {
-  console.log(`Calories in ${this.name} are ${this.calories * 200}`);
-};
-
-function Banana(bananaAttrs) {
-  Parent.call(this, bananaAttrs);
-  this.doMonkeysLikeIt = bananaAttrs.doMonkeysLikeIt;
-}
-
-Banana.prototype = Object.create(Fruit.prototype);
-
-Banana.prototype.checkIfMonkeysLikeIt = function() {
-  if(this.doMonkeysLikeIt) {
-    return true;
-  } else {
-    return false;
+  shipped (destination) {
+    console.log(`Shipping ${this.name} to ${destination}`);
   }
-};
-
-function Kiwi(kiwiAttrs) {
-  Fruit.call(this, kiwiAttrs);
-  this.isFuzzy = kiwiAttrs.isFuzzy;
+  calculateCals() {
+    console.log(`Calories in ${this.name} are ${this.calories * 200}`);
+  }
 }
 
-Kiwi.prototype = Object.create(Fruit.prototype);
+// function Banana(bananaAttrs) {
+//   Parent.call(this, bananaAttrs);
+//   this.doMonkeysLikeIt = bananaAttrs.doMonkeysLikeIt;
+// }
 
-Kiwi.prototype.checkIfFuzzy = function() {
-   if(this.isFuzzy) {
-    return true;
-  } else {
-    return false;
+// Banana.prototype = Object.create(Fruit.prototype);
+
+// Banana.prototype.checkIfMonkeysLikeIt = function() {
+//   if(this.doMonkeysLikeIt) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+class Banana extends Fruit {
+  constructor(bananaAttrs) {
+    super(bananaAttrs);
+    this.doMonkeysLikeIt = bananaAttrs.doMonkeysLikeIt;
   }
+  checkIfMonkeysLikeIt() {
+    if(this.doMonkeysLikeIt) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+// function Kiwi(kiwiAttrs) {
+//   Fruit.call(this, kiwiAttrs);
+//   this.isFuzzy = kiwiAttrs.isFuzzy;
+// }
+
+// Kiwi.prototype = Object.create(Fruit.prototype);
+
+// Kiwi.prototype.checkIfFuzzy = function() {
+//    if(this.isFuzzy) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+
+class Kiwi extends Fruit{
+  constructor(kiwiAttrs){
+    super(kiwiAttrs);
+    this.isFuzzy = kiwiAttrs.isFuzzy;
+  }
+  checkIfFuzzy() {
+    if(this.isFuzzy) {
+     return true;
+   } else {
+     return false;
+   }
+ }
 }
 
 const newBanana = new Banana({
