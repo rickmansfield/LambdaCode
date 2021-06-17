@@ -1,13 +1,13 @@
 // CLASSES
 //classes are not hoisted. Code above it doesn't work in the class
-//Strict
+//Strict - prevents window binding, forces cleaner code
 //methods are special syntax
 //the word "constructor" is visible
 
 // CHILD CLASSES
 // extends - it links up the dunder __proto__ tells where it came from 
 // extends - tell super what to super to
-// extend + super do what Parent.call and Oject.create did in the old way. 
+// extends + super do what Parent.call and Oject.create did in the old way. 
 
 //EXAMPLES
 //WITH ARGUMENTS
