@@ -4,7 +4,7 @@
 //   this.isRipe = attrs.isRipe;
 //   this.calories = attrs.calories;
 // }
-
+// 
 // Fruit.prototype.shipped = function(destination) {
 //   console.log(`Shipping ${this.name} to ${destination}`);
 // };
