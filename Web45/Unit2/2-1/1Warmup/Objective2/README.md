@@ -86,7 +86,7 @@ Array.from(arrayLikeObject)
 
 ### Selector Tutorial
 
-Let's get some practice using different selector methods. You can use this code (Links to an external site.) or write your own.
+Let's get some practice using different selector methods. You can use [this code](https://codepen.io/lambdaschool/pen/eLaXXb?editors=1010) (Links to an external site.) or write your own.
 
 Study this HTML first:
 

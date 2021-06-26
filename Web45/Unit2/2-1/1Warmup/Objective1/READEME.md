@@ -31,23 +31,21 @@ Note: There are so many methods and properties on document (and its subsequent e
 
 Lets investigate the DOM together by visiting a live website and updating the DOM. Follow these steps in order:
 
-Prerequisite: This tutorial assumes you are using Google Chrome. You can get similar results in any other browser but these steps were tailored for a chrome experience.
+**Prerequisite: This tutorial assumes you are using Google Chrome. You can get similar results in any other browser but these steps were tailored for a chrome experience.**
 
-Navigate to [lambdaschool.com](https://lambdaschool.com/) (Links to an external site.).
-Right click on the main heading and you should see a dropdown with an option to {inspect element}. 
+1. Navigate to [lambdaschool.com](https://lambdaschool.com/) (Links to an external site.).
+2. Right click on the main heading and you should see a dropdown with an option to {inspect element}. Click that option and chrome developer tools should activate.
+3. The developer tools should be showing the selection you made when you right clicked. Double click the content of the heading. You should now be able to edit the text of the header.
+4. Update the text with anything you'd like. For this example, I will update the text to say "Hello there!" You won't see any changes until you deselect the content in the chrome developer tools.
+5. Now try updating the content and HTML of other elements on the page.
 
-Click that option and chrome developer tools should activate.
-
-The developer tools should be showing the selection you made when you right clicked. Double click the content of the heading. You should now be able to edit the text of the header.
-Update the text with anything you'd like. For this example, I will update the text to say "Hello there!" You won't see any changes until you deselect the content in the chrome developer tools.
-Now try updating the content and HTML of other elements on the page.
-Notice that if you refresh the page, the changes you made are gone! That is because the elements you were editing existed in the DOM and were not permanent!
+Notice that if you refresh the page, the changes you made are gone! **That is because the elements you were editing existed in the DOM and were not permanent!**
 
 You now have experience editing the DOM without writing code. Go check out the challenge below to see the DOM inside the console!
 
 ## Challenge
 
-Open the console in your web browser and enter console.log(document);.
+Open the console in your web browser and enter `console.log(document);.`
 
 This should make the document appear on the screen, play around with it for a minute. Notice how the document contains all of the HTML elements (otherwise now known as DOM nodes) on the page. Hover over these nodes and notice how the element on the page is highlighted.
 
