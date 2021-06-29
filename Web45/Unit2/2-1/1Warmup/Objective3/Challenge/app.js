@@ -43,4 +43,12 @@ const kittyImgAlt0 = kittyImgAlt[0];
 console.log(kittyImgAlt0);
 kittyImgAlt0.setAttribute('alt', "Shocked and dissapointed white Kitten");
 
-// Update layout styles, try out flex properties with JavaScript syntax
+// 5) Update layout styles, try out flex properties with JavaScript syntax
+
+const mainHeader = document.querySelector('h1');
+console.log(mainHeader);
+mainHeader.style.color = 'white';
+mainHeader.style.background = 'grey';
+mainHeader.style.display = 'flex';
+mainHeader.style.flexDirection = 'column';
+mainHeader.style.alignItems = 'center';
