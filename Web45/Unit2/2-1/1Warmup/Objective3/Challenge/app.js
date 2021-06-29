@@ -25,7 +25,7 @@ console.log(secondHeading.textContent);
 // 3) Change the href of an anchor tag
 // Note This requires knowing the the href is an attribute and
 //therefore preferably we might use .setAttribute() over .{att}
-// 3a) using .setAttribute
+// 3a) using .setAttribute and isolating one of all four <a> tags. 
 // const navItems = document.querySelectorAll('#href');
 const navItems = document.querySelectorAll('a');
 console.log(navItems);
@@ -35,5 +35,12 @@ console.log(navItemAbout);
 
 
 
-// Update the alt tag of an image
+// 4) Update the alt tag of an image. 
+//Note: While there is only one image I've elected to use "querySelectorALL()" to remind me how to identify any "one" of "all" the possible images on a DOM
+const kittyImgAlt = document.querySelectorAll('img');
+console.log(kittyImgAlt);
+const kittyImgAlt0 = kittyImgAlt[0];
+console.log(kittyImgAlt0);
+kittyImgAlt0.setAttribute('alt', "Shocked and dissapointed white Kitten");
+
 // Update layout styles, try out flex properties with JavaScript syntax
