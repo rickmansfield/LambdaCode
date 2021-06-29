@@ -26,7 +26,12 @@ console.log(secondHeading.textContent);
 // Note This requires knowing the the href is an attribute and
 //therefore preferably we might use .setAttribute() over .{att}
 // 3a) using .setAttribute
-const navItems = document.get
+// const navItems = document.querySelectorAll('#href');
+const navItems = document.querySelectorAll('a');
+console.log(navItems);
+const navItemAbout = navItems[1];
+navItemAbout.setAttribute('href', "#About");
+console.log(navItemAbout);
 
 
 

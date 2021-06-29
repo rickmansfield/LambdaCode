@@ -29,7 +29,6 @@ console.log(moreAnchorTags);
 /* 
   Request 3: Locate the ID in the HTML. Log the element that the ID is on.
 */
-
 const customID = document.getElementById('first-heading');
 console.log(customID);
 // OR with a querySelector()
