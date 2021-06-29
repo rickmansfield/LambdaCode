@@ -1,6 +1,9 @@
 /*
+RESOURCE = https://www.youtube.com/watch?v=uwJyp4ZLVMA
 NOTE NOTE NOTE
 Why use HTML Collection vs Node List if either might return the same solution... because one has more methods available than the other. i.e. you can manipulate the solution more with one type than the other type. So you want to pick the solution (HTML Collection or Node List) depending on what you want to DO to it. 
+
+For example with Node List you have pre built methods .keys() .values() and .entries() that are not available otherwise. 
 
   For this challenge you will be asked to follow the requests below and decipher which selector method you should use.  
   
