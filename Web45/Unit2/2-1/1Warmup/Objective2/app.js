@@ -1,4 +1,6 @@
 /*
+NOTE NOTE NOTE
+Why use HTML Collection vs Node List if either might return the same solution... because one has more methods available than the other. i.e. you can manipulate the solution more with one type than the other type. So you want to pick the solution (HTML Collection or Node List) depending on what you want to DO to it. 
 
   For this challenge you will be asked to follow the requests below and decipher which selector method you should use.  
   
@@ -43,8 +45,8 @@ console.log(mainContent);
   Request 5: Log the third element with a class of ".nav-item"
 */
 
-// const thirdNavItem;
-// console.log(thirdNavItem);
+const thirdNavItem = document.querySelectorAll('.nav-item');
+console.log(thirdNavItem[2]);
 
 
 
