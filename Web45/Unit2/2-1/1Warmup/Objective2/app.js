@@ -27,13 +27,16 @@ console.log(moreAnchorTags);
 
 const customID = document.getElementById('first-heading');
 console.log(customID);
+// OR with a querySelector()
+const customIDv2 = document.querySelector('#first-heading');
+console.log(customIDv2);
 
 /* 
   Request 4: Log the first class that matches ".main-content"
 */
 
-// const mainContent;
-// console.log(mainContent);
+const mainContent = document.getElementsByClassName('main-content');
+console.log(mainContent);
 
 /* 
   Request 5: Log the third element with a class of ".nav-item"
