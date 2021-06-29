@@ -32,7 +32,7 @@ After we have captured our element (eg. `const el = document.querySelector('#idN
 
 ### .textContent
 
-- Gets and sets the text of an element. Essentially whatever text is between the open and closing tags of an HTML element.
+- **Gets** and **sets** the text of an element. Essentially whatever text is between the open and closing tags of an HTML element.
 - Can use the assignment operator ( = ) to reset the text of an element
 - Setting this property on a node removes all of its children and replaces them with the new single text node.
 - `<div>Something Here</div>`
