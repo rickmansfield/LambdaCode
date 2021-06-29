@@ -25,8 +25,8 @@ console.log(moreAnchorTags);
   Request 3: Locate the ID in the HTML. Log the element that the ID is on.
 */
 
-// const customID;
-// console.log(customID);
+const customID = document.getElementById('first-heading');
+console.log(customID);
 
 /* 
   Request 4: Log the first class that matches ".main-content"
