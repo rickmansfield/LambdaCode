@@ -10,8 +10,9 @@
   Request 1: Log the result of every `a` element on the page. The result should be an `HTMLCollection`
 */
 
-//const anchorTags;
-//console.log(anchorTags);
+const anchorTags = document.getElementsByTagName('a');
+console.log(anchorTags);
+
 
 /* 
   Request 2: Log the result of every `a` element on the page. The result should be a `NodeList`
