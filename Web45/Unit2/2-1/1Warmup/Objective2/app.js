@@ -35,8 +35,9 @@ console.log(customIDv2);
   Request 4: Log the first class that matches ".main-content"
 */
 
-const mainContent = document.getElementsByClassName('main-content');
+const mainContent = document.querySelector('.main-content');
 console.log(mainContent);
+//NOTICE without "All" you get the first one. i.e. document.querySelectorAll. 
 
 /* 
   Request 5: Log the third element with a class of ".nav-item"
