@@ -18,8 +18,8 @@ console.log(anchorTags);
   Request 2: Log the result of every `a` element on the page. The result should be a `NodeList`
 */
 
-// const moreAnchorTags;
-// console.log(moreAnchorTags);
+const moreAnchorTags = document.querySelectorAll('a');
+console.log(moreAnchorTags);
 
 /* 
   Request 3: Locate the ID in the HTML. Log the element that the ID is on.
