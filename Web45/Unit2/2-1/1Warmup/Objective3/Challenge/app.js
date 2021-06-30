@@ -52,3 +52,23 @@ mainHeader.style.background = 'grey';
 mainHeader.style.display = 'flex';
 mainHeader.style.flexDirection = 'column';
 mainHeader.style.alignItems = 'center';
+
+// Nav links Start
+const navBar = document.querySelectorAll("a");
+//console.log(navBar);
+
+// Nav links 
+navBar.forEach((nav) => {
+  
+// Nav links
+  nav.addEventListener("mouseover", (event) => {
+    event.target.style.borderBottom = "1px solid crimson";
+    event.target.style.color = "blue";
+  });
+
+  // Nav links End
+  nav.addEventListener("mouseleave", (event) => {
+    event.target.style.border = "none";
+    event.target.style.color = "black";
+  });
+});

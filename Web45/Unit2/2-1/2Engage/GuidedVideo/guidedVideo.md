@@ -119,7 +119,9 @@ cardImage.setAttribute('src', 'https://buff.ly/3AfZ4hh');
 
 changing the style. Note the "sky" classname should turn the background color to blue.
 
-- by changing the class anmes on the element
+- by changing the class names on the element with 
+  - .setAttribute() //sucks
+  - .classList
 
 ```JavaScript
 card.setAttribute('class', 'card sky');//dot notation and setAttribute sucks. Instead use .classList
