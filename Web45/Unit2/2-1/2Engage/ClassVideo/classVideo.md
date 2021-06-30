@@ -6,4 +6,6 @@
 
 ## DOM
 
-- **DOM** is about a collection of buttons, readouts, and levers you can use so your code can change the page. 
+- **DOM** is about a collection of buttons, readouts, and levers you can use so your code can change the page.
+
+-
