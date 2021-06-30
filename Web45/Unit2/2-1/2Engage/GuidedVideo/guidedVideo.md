@@ -6,6 +6,8 @@
   - [Contents](#contents)
   - [Video](#video)
   - [DOM Defined](#dom-defined)
+    - [clone elements](#clone-elements)
+    - [Appending](#appending)
 
 ## Video
 
@@ -14,4 +16,19 @@
 ## DOM Defined
 
 - The DOM is an interface collection of buttons, levers, and readouts that your code can use to manipulate the page.
-- test
+  
+### clone elements
+
+```javascript
+Example: const firstDiv = document.querySelector('div');
+
+const copyOfFirstDiv = firstDiv.cloneNode(true);
+//check console.log(copyOfFirstDiv);
+```
+
+### Appending
+
+```javascript
+const parentDiv = firstDiv.parent
+```
+
