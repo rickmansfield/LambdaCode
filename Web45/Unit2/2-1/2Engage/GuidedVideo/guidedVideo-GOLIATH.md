@@ -30,9 +30,7 @@ const copyOfFirstDiv = firstDiv.cloneNode(true);
 
 ```javascript
 // long way to get the 
-const divContainer = document.querySelector('.div-container');
-// Short way
-//const parentDiv = firstDiv.parentElement;
-divContainer.appendChild(copyofFirstDiv);
+const divContainer = document.querySelector('.)
+const parentDiv = firstDiv.parentElement;
 ```
 
