@@ -13,6 +13,9 @@
   - [Practice 2](#practice-2)
   - [Practice 3](#practice-3)
   - [Practice 4](#practice-4)
+  - [Practice 5](#practice-5)
+  - [Practice 6](#practice-6)
+  - [Practice 7](#practice-7)
 
 ## Video
 
@@ -96,7 +99,11 @@ const cardLink2 = secondCard.querSelector('a:nth-of-type[2]');
 Changing an Elements text content `textContent`, `innerText' (subtle differences)
 
 ```JavaScript
-
+cardTitle.textContent = "New H2";
+cardSubtitle.textContent = "New H2";
+cardText.textContent = "New Card Text";
+cardLink1.textContent = "New Link 1";
+cardLink2.textContent = "New Link 2";
 ```
 
 ## Practice 4
@@ -104,6 +111,46 @@ Changing an Elements text content `textContent`, `innerText' (subtle differences
 Accessing and changing element attributes with dot notation `setAttribut`, `getAttribute`
 
 ```JavaScript
+cardImage.src = 'https://th.bing.com/th/id/R5094323593019233df5977c369103a19?rik=hTA2HPudUs5n%2fw&pid=ImgRaw'
+cardImage.setAttribute('src', 'https://buff.ly/3AfZ4hh');
 ```
 
+## Practice 5
 
+changing the style. Note the "sky" classname should turn the background color to blue.
+
+- by changing the class anmes on the element
+
+```JavaScript
+card.setAttribute('class', 'card sky');//dot notation and setAttribute sucks. Instead use .classList
+card.classList.add('sky');
+header.classList.add('sky');
+header.classList.remove('sky');
+setInterval(()=> {
+    header.classList.toggle('sky')
+}, 1000);
+```
+
+- by manipulating the inline styles on the element.Remember that this is dangerous because it always wins in CSS and overrides other styles. 
+
+```JavaScript
+card.style.backgroundColor = 'royalblue';
+```
+
+## Practice 6
+
+Create new elements and append them
+
+```JavaScript
+const newLink = document.createElement('a');
+const newLink.textContent = 'blah';
+newLine.href = 'a';
+document.querySelector('#mainNav').appendChild(newLink);
+```
+
+## Practice 7
+
+Remove an exiting element and put it back
+
+```JavaScript
+```
