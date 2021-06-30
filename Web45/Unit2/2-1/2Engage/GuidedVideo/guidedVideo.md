@@ -10,7 +10,9 @@
     - [Append an Element](#append-an-element)
     - [Example Manipulations](#example-manipulations)
     - [Create an Array](#create-an-array)
-  - [Practice](#practice)
+  - [Practice 2](#practice-2)
+  - [Practice 3](#practice-3)
+  - [Practice 4](#practice-4)
 
 ## Video
 
@@ -68,18 +70,40 @@ const realArrayOfCrads = Array.from(cards)
 console.log(realArrayOfCards);
 ```
 
-## Practice
+## Practice 2
 
-From the second card
+This exercise involves finding an element on the page and saving a reference to it.
+
+- Older: `getElementByID`, `getElementByTagName`, `getElementByClassName`
+- Newer: `querySelector`, `querySelectorAll`
+
+From the second card (already established above)
 
 ```JavaScript
 const header = document.querySelector('header');
 const logoTitle = document.querySelector('#logoTitle');
 const card = secondCard;
-const cardImage = null;
-const cardTitle = null;
-const cardSubtitle = null;
-const cardText = null;
-const cardLink1 = null;
-const cardLink2 = null;
+const cardImage = secondCard.querySelector('img');
+const cardTitle = secondCard.querySelector('h2');
+const cardSubtitle = secondCard.querySelector('h3');
+const cardText = secondCard.querSelector('.card-text');
+const cardLink1 = secondCard.querSelector('a');
+const cardLink2 = secondCard.querSelector('a:nth-of-type[2]');
 ```
+
+## Practice 3
+
+Changing an Elements text content `textContent`, `innerText' (subtle differences)
+
+```JavaScript
+
+```
+
+## Practice 4
+
+Accessing and changing element attributes with dot notation `setAttribut`, `getAttribute`
+
+```JavaScript
+```
+
+
