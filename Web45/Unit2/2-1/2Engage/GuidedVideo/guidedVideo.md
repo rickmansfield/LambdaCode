@@ -133,7 +133,7 @@ setInterval(()=> {
 }, 1000);
 ```
 
-- by manipulating the inline styles on the element.Remember that this is dangerous because it always wins in CSS and overrides other styles. 
+- by manipulating the inline styles on the element.Remember that this is dangerous because it always wins in CSS and overrides other styles.
 
 ```JavaScript
 card.style.backgroundColor = 'royalblue';
