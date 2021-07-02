@@ -1,3 +1,7 @@
+window.onload = function (event) {
+  console.log(`an event happened, of type ${event.type}`);
+};
+
 /* Use this sample as a quide */
 let sampleButton = document.querySelector('.sampleButton');
 sampleButton.addEventListener('click', (event) => {

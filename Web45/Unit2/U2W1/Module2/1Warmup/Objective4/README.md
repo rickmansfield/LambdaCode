@@ -7,14 +7,14 @@
 - [Objective 4](#objective-4)
   - [Contents](#contents)
   - [Overview](#overview)
-    - [`.addEventListener `](#addeventlistener-)
+    - [`.addEventListener`](#addeventlistener)
     - [Events](#events)
     - [The callback and the `Event Object`](#the-callback-and-the-event-object)
   - [Challenge](#challenge)
 
 ## Overview
 
-### `.addEventListener `
+### `.addEventListener`
 
 Once we have an element selected, we can use the `'.addEventListener'` method on that element. `.addEventListener` takes two arguments, first the event to listen for and, second, the callback to fire when that event is triggered. For a complete list of events see the resources below. In use, this looks something like `element.addEventListener('click', callback);`.
 

@@ -10,6 +10,10 @@
 
 ## Overview
 
+- events driven programming
+- event objects
+- event types
+
 We use Javascript to make our pages dynamic and usable. Now that we can access and manipulate elements on our page, you might be wondering to yourself, "Why don't we just change the elements in the HTML file directly? Why do we have to go through all of this just to change some styling on an element?" Those are valid questions, and the way we have been using Javascript so far, it would make sense to change our HTML instead.
 
 But, Javascript's real power lies in its ability to make webpages interactive. In addition to manipulating elements, Javascript also allows us to add features and make modifications to our site by directly reacting to user interactions. Think about a button click, drag and drop, zoom, or any number of user interactions. We create functionality for those interactions using JavaScript. Now that we know how to manipulate and modify DOM nodes, we can learn about events.
