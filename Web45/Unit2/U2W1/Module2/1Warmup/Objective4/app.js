@@ -62,7 +62,7 @@ button2.addEventListener('mouseleave', event => {
 
 /* Step Eight: Finish the section in TK on stopPropagation */
 function listener(event) {
-  console.log(`event passing through ${event.currentTarget.nodeName}`);
+  console.log(`event passing through ${event.currentTarget.nodeName || 'Window'}`);
 }
 
 button2.addEventListener('click', listener);//should read "event passing through DIV." The video (for THEIR example) says "event passing through BUTTON" is the inner most target. But in this case (inpsect index.html) the inner most target is a <div> inside another <div> not a <button> inside a <div>
@@ -83,6 +83,9 @@ container.addEventListener('click', event => {
 
 //Answer=========================================
 //not sure how userfull this is.. but ok I get it. The most deeply nested element fires first and then the outtermost fires after that. Cool? or Annoying? lol
+window.addEventListener('click', listener);
+document.addEventListener('click', listener);
+button2.addEventListener('click', listener);
 
 
 /* Step Eleven: Add stopPropagation to the button click handler */
