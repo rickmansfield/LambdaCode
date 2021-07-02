@@ -1,6 +1,12 @@
+//old way
 window.onload = function (event) {
   console.log(`an event happened, of type ${event.type}`);
 };
+
+//New Modern Way
+window.addEventListener('load', event => {
+  console.log(`${event.type} happened`);
+});
 
 /* Use this sample as a quide */
 let sampleButton = document.querySelector('.sampleButton');
