@@ -69,10 +69,21 @@ button2.addEventListener('click', listener);//should read "event passing through
 
 
 /* Step Nine: Create a click event on the container, it can do whatever you want it to, but make it visible */
+const container = document.querySelector('.container');
+console.log(container);
+container.addEventListener('click', event => {
+  event.target.style.boarder = 'purple';
+  event.target.style.boarder = '2px';
+  event.target.style.backgroundColor = 'pink';
+});
 
 
 
 /* Step Ten: Click the button, notice how the container click event also triggers? */
+
+//Answer=========================================
+//not sure how userfull this is.. but ok I get it. The most deeply nested element fires first and then the outtermost fires after that. Cool? or Annoying? lol
+
 
 /* Step Eleven: Add stopPropagation to the button click handler */
 
