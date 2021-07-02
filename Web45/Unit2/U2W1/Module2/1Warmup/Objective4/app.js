@@ -87,7 +87,8 @@ container.addEventListener('click', event => {
 window.addEventListener('click', listener);
 document.addEventListener('click', listener);
 const body = document.querySelector('body');
-button2.addEventListener('click', (e) => e.stopPropagation());
+// button2.addEventListener('click', (e) => e.stopPropagation());
+document.body.addEventListener('click', (e) => e.stopImmediatePropagation());
 body.addEventListener('click', listener);
 button2.addEventListener('click', listener);
 
@@ -102,6 +103,7 @@ button2.addEventListener('click', e => console.log('click!'));
 /* Step Twelve: Click the button now, the click should not propagate to the conainer. */
 
 //Answer======================
-//worked great. I posed the answer in step eleven and copied it into step 10 to comment it out (turn it on/off) and "body" would stop being propagated while it was on during a click. i.e. the event listener for body would not propagate since the .stopPropagatio() was place BEFORE that point in the code. 
-//Coolieo... 
+//worked great. I posted the answer in step eleven and copied it into step 10 to comment it out (turn it on/off) and "body" would stop being propagated while it was on during a click. i.e. the event listener for body would not propagate since the .stopPropagatio() was place BEFORE that point in the code. 
+//Coolieo... but... WHY... why would I want this? 
+//Experimented with document.body.addEventListener('click', (e) => e.stopImmediatePropagation()); as well. 
 /* All Done! */
