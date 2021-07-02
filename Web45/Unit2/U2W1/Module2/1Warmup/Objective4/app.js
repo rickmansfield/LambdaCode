@@ -30,7 +30,7 @@ button2.addEventListener('click', event =>{
 /* Step Three: Using the 'event' object in the callback, Change the background color of the button */
 
 button2.addEventListener('click', event =>{
-  console.log(`Changing the DOM`)
+  console.log(`Changing the DOM`);
   event.target.style.backgroundColor = 'red';
 });
 
@@ -61,6 +61,11 @@ button2.addEventListener('mouseleave', event => {
 });
 
 /* Step Eight: Finish the section in TK on stopPropagation */
+function listener(event) {
+  console.log(`event passing through ${event.currentTarget.nodeName}`);
+}
+
+button2.addEventListener('click', listener);//should read "event passing through DIV." The video (for THEIR example) says "event passing through BUTTON" is the inner most target. But in this case (inpsect index.html) the inner most target is a <div> inside another <div> not a <button> inside a <div>
 
 
 /* Step Nine: Create a click event on the container, it can do whatever you want it to, but make it visible */
