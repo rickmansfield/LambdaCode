@@ -8,11 +8,6 @@ window.addEventListener('load', event => {
   console.log(`${event.type} happened`);
 });
 
-//Isolate to use it now
-// const theButton = document.querySelector('.sampleButton');
-// console.log(theButton);
-// theButton.onClick
-
 /* Use this sample as a quide */
 let sampleButton = document.querySelector('.sampleButton');
 sampleButton.addEventListener('click', (event) => {
@@ -40,10 +35,14 @@ button2.addEventListener('click', event =>{
 });
 
 /* Step Four: Click on the button, does it work? */
-//Clicked and it works perfectly. 
+
+//Answer=================================
+//Clicked and it works perfectly. !!!!!!!
 
 
 /* Step Five: Use the method addEventListener on the container element, listening for a 'mouseenter' event */
+
+//Answer ================================
 // button2.addEventListener('mouseenter', event => {
 //   document.container.style.backgroundColor = 'blue';
 // })
@@ -62,6 +61,7 @@ button2.addEventListener('mouseleave', event => {
 });
 
 /* Step Eight: Finish the section in TK on stopPropagation */
+
 
 /* Step Nine: Create a click event on the container, it can do whatever you want it to, but make it visible */
 
