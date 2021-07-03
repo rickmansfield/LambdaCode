@@ -15,3 +15,10 @@ console.log(headerH1
 //Isolate <section class="content-pick"> to add needed elements
 // const sectionContentPick = document.querySelector('content-pick');
 // console.log(sectionContentPick);
+
+// Next I set up a modal with a Parent div defaulted to off
+const newParentDivModal = document.createElement('div');
+newParentDivModal.classList.add('modal');
+newParentDivModal.classList.add('off');
+// sectionContentPick.appendChild(newParentDivModal);
+console.log(newParentDivModal);
