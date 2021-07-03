@@ -34,3 +34,9 @@ const divChild2 = document.createElement('div');
 divChild2.classList.add('modal-dialog');
 newParentDivModal.appendChild(divChild2);
 console.log(divChild2);
+
+//Add h4 message "Are You Sure?" append to div dialog
+const messageSure = document.createElement('h4');
+messageSure.setAttribute('id', "youSure");
+divChild2.appendChild(messageSure);
+console.log(messageSure);
