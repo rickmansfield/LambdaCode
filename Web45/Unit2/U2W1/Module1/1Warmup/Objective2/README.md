@@ -149,7 +149,7 @@ NodeList(4)
 
 Wow, that is totally different than our result from `querySelector()` in the first example! We now have a `NodeList` and all of the nodes matching the a elements.
 
-What can we do with a `NodeList`? You can dig deeper into the documentation (Links to an external site.), but for our tutorial, let's see how it is "array-like."
+What can we do with a `NodeList`? You can [dig deeper into the documentation](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), but for our tutorial, let's see how it is "array-like."
 
 Study this code:
 
