@@ -22,3 +22,9 @@ newParentDivModal.classList.add('modal');
 newParentDivModal.classList.add('off');
 // sectionContentPick.appendChild(newParentDivModal);
 console.log(newParentDivModal);
+
+//added a child1 div for opacity 
+const divChild1 = document.createElement('div');
+divChild1.classList.add('modal-opacity');
+newParentDivModal.appendChild(divChild1);
+console.log(divChild1);
