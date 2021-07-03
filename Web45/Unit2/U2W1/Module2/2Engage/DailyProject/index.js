@@ -40,3 +40,10 @@ const messageSure = document.createElement('h4');
 messageSure.setAttribute('id', "youSure");
 divChild2.appendChild(messageSure);
 console.log(messageSure);
+
+//Add ConfirmationButton Yes & append to div dialog
+const buttonY = document.createElement('button');
+buttonY.setAttribute('id', "confirmationButton");
+buttonY.textContent= `Yes, let's rock`;
+divChild2.appendChild(buttonY);
+console.log(buttonY);
