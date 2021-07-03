@@ -74,3 +74,17 @@ reportfailureOffh1.classList.add('failure');
 reportfailureOffh1.classList.add('off');
 reportfailureOffh1.textContent = "Process Canceled. You are NOT signed up!";
 console.log(reportfailureOffh1);
+
+//Handle click events on signMeUpBtn
+signMeUpDivBtn.onclick = function (event) {
+    console.log(`${event.target.nodeName}`);
+};
+//this part is just for me to track bubbling
+signMeUpDivBtn.addEventListener('click', function (e){
+    console.log(`${event} NEW WAY --> this doesn't override anything`)
+    console.log(`
+    Event: TimeStamp ${Math.floor(event.timeStamp / 1000)}, 
+    Event: Type ${event.type}, 
+    Event: Target ${event.target.nodeName}
+    `);
+});
