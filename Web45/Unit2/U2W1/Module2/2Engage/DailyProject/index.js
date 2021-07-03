@@ -28,3 +28,9 @@ const divChild1 = document.createElement('div');
 divChild1.classList.add('modal-opacity');
 newParentDivModal.appendChild(divChild1);
 console.log(divChild1);
+
+//Added child2 div for modal dialog
+const divChild2 = document.createElement('div');
+divChild2.classList.add('modal-dialog');
+newParentDivModal.appendChild(divChild2);
+console.log(divChild2);
