@@ -54,3 +54,11 @@ buttonN.setAttribute('id', "cancelButton");
 buttonN.textContent = "No take me back";
 divChild2.appendChild(buttonN);
 console.log(buttonN);
+
+//Add <h1 class="report success off">
+const reportSuccessOffh1 = document.createElement('h1');
+reportSuccessOffh1.classList.add('report');
+reportSuccessOffh1.classList.add('success');
+reportSuccessOffh1.classList.add('off');
+reportSuccessOffh1.textContent = "Signed Up --> Coming Soon!";
+console.log(reportSuccessOffh1);
