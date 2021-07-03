@@ -47,3 +47,10 @@ buttonY.setAttribute('id', "confirmationButton");
 buttonY.textContent= `Yes, let's rock`;
 divChild2.appendChild(buttonY);
 console.log(buttonY);
+
+//Add CancelButton No & AppendChild to div dialog
+const buttonN = document.createElement('button');
+buttonN.setAttribute('id', "cancelButton");
+buttonN.textContent = "No take me back";
+divChild2.appendChild(buttonN);
+console.log(buttonN);
