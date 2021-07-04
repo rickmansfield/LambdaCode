@@ -1,3 +1,11 @@
+const fakeData = [
+    "Button One",
+    "Button Two",
+    "Button Three",
+    "Button Four"
+];
+
+
 function buttonCreater(text){
     let button = document.createElement('button');
     button.textContent = text;
@@ -17,8 +25,16 @@ console.log('Then product of the buttonCreater Fuction', button1);
 let container = document.querySelector('.container');
 
 
-container.appendChild(button1);//Try prepend and append as well
+container.appendChild(button1);
 container.appendChild(button2);
 container.appendChild(buttonCreater('Fun Button'));
 container.appendChild(buttonCreater('Cool Component'));
 container.appendChild(buttonCreater('Contact'));
+
+//Old way 
+const button7 = buttonCreater(fakeData[0]);
+const button8 = buttonCreater(fakeData[1]);
+const button9 = buttonCreater(fakeData[2]);
+container.appendChild(button7);
+container.appendChild(button8);
+container.appendChild(button9);
