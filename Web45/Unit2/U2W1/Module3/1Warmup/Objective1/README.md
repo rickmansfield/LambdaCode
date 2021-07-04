@@ -20,6 +20,10 @@
 
 - A part or element of a larger whole.
 - A component is made of several parts: HTML, CSS, or JavaScript brought together for reuse in a website or application.
+- Reuseable
+- DRY
+- Can Stand Alone
+- Separation of duties (compartmentalize)
 
 ## Components - HTML
 
