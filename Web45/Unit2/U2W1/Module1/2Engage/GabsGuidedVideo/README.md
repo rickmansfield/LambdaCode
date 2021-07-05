@@ -10,11 +10,11 @@
     - [Append an Element](#append-an-element)
     - [Example Manipulations](#example-manipulations)
     - [Create an Array](#create-an-array)
-  - [Practice 2](#practice-2)
-  - [Practice 3](#practice-3)
-  - [Practice 4](#practice-4)
-  - [Practice 5](#practice-5)
-  - [Practice 6](#practice-6)
+  - [Practice 2 Finding collections of elements](#practice-2-finding-collections-of-elements)
+  - [Practice 3 .textContent()](#practice-3-textcontent)
+  - [Practice 4 Change property .setAttribute()](#practice-4-change-property-setattribute)
+  - [Practice 5 Styling Elements by .classList()](#practice-5-styling-elements-by-classlist)
+  - [Practice 6 .creatElement()](#practice-6-createlement)
   - [Practice 7](#practice-7)
 
 ## Video
@@ -73,7 +73,7 @@ const realArrayOfCrads = Array.from(cards)
 console.log(realArrayOfCards);
 ```
 
-## Practice 2
+## Practice 2 Finding collections of elements
 
 This exercise involves finding an element on the page and saving a reference to it.
 
@@ -94,7 +94,7 @@ const cardLink1 = secondCard.querSelector('a');
 const cardLink2 = secondCard.querSelector('a:nth-of-type[2]');
 ```
 
-## Practice 3
+## Practice 3 .textContent()
 
 Changing an Elements text content `textContent`, `innerText' (subtle differences)
 
@@ -106,7 +106,7 @@ cardLink1.textContent = "New Link 1";
 cardLink2.textContent = "New Link 2";
 ```
 
-## Practice 4
+## Practice 4 Change property .setAttribute()
 
 Accessing and changing element attributes with dot notation `setAttribut`, `getAttribute`
 
@@ -115,7 +115,7 @@ cardImage.src = 'https://th.bing.com/th/id/R5094323593019233df5977c369103a19?rik
 cardImage.setAttribute('src', 'https://buff.ly/3AfZ4hh');
 ```
 
-## Practice 5
+## Practice 5 Styling Elements by .classList()
 
 changing the style. Note the "sky" classname should turn the background color to blue.
 
@@ -139,7 +139,7 @@ setInterval(()=> {
 card.style.backgroundColor = 'royalblue';
 ```
 
-## Practice 6
+## Practice 6 .creatElement()
 
 Create new elements and append them
 
