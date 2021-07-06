@@ -367,3 +367,15 @@ function handleResize(entries) {
         removePhoto();
     }
 }
+
+function addPhoto() {
+    if (!document.querySelector('.two img')){
+    let img = document.createElement('img');
+    // let rand = Math.floor(Math.random() * 100 ) +100;
+    // img.scr = `https://source.unsplash.com/random/300x200?sig=${rand}`;
+    img.setAttribute('src', `https://source.unsplash.com/collection/190727/400x300`);
+    img.alt = 'Random Image';
+    document.querySelector('.two p').appendChild(img);
+    // document.querySelector('.one p').appendChild(img);
+    }
+}
