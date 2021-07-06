@@ -348,3 +348,8 @@ const pTwo = document.createElement('p');
 pTwo.textContent = "TWO";
 sectionTwo.appendChild(pTwo);
 
+document.addEventListener('DOMContentLoaded', () => {
+    let resizer = new ResizeObserver(handleResize);
+    // resizer.observe(document.querySelector('.container home'));
+    resizer.observe(divOne);
+});
