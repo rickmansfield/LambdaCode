@@ -324,4 +324,27 @@ function inputFocus() {
   input.value = 'Email here';
 }
 
+//RESIZE EVENT ==================================
+//The resize event fires when the document view (window) has been resized.
+const divOne = document.createElement('div');
+divOne.classList.add('containerA');
+// console.log(sectionOne);
+intro.appendChild(divOne);
+console.log(intro);
+
+const sectionOne = document.createElement('section');
+sectionOne.classList.add('one');
+divOne.appendChild(sectionOne);
+
+const pOne = document.createElement('p');
+pOne.textContent = "ONE";
+sectionOne.appendChild(pOne);
+
+const sectionTwo = document.createElement('section');
+sectionTwo.classList.add('two');
+divOne.appendChild(sectionTwo);
+
+const pTwo = document.createElement('p');
+pTwo.textContent = "TWO";
+sectionTwo.appendChild(pTwo);
 
