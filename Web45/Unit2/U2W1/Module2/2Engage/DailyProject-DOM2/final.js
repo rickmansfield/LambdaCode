@@ -379,3 +379,8 @@ function addPhoto() {
     // document.querySelector('.one p').appendChild(img);
     }
 }
+
+function removePhoto() {
+    let img = document.querySelector('.two img');
+    img?.parentElement.removeChild(img);
+}
