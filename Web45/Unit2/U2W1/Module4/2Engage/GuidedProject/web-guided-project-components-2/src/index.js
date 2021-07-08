@@ -1,5 +1,6 @@
 import axios from 'axios';
 console.log(axios);
+
 //Non idomatic way
 // const result = axios.get('https://lambda-times-api.herokuapp.com/friends');
 // // console.log(result);// the data is not here
@@ -16,12 +17,26 @@ console.log(axios);
 console.log('1 About to fetch data with Axios');
 
 axios.get('https://lambda-times-api.herokuapp.com/friends')
-.then(furtureData => {
+.then(res => {
   //freedom to assume the data is here
   //future code, for when the data actually arives
-  console.log('3 Here is the future data', furtureData);
+  console.log('3 Here is the response organized by axios', res);
+  console.log('Here is the response body', res.data);
+
+  // axios.get(res.data.newURL);//for multiple request from the same point
+  // BUT from Two different end point you must add a new request...
+  // next request here
+})
+// .then():
+// .then();
+// .then();
+.catch(drama => {
+  //handle the drama
+  console.log(drama);
 });
 
+// if you want to handle several indepent promises 
+// Promise.all([p1, p2, p3]).then([res1, res2, res3])
 
 console.log('2 We requested data with axios');
 
@@ -29,6 +44,7 @@ console.log('2 We requested data with axios');
 
 // Imports at the top of the file!
 // We never nest imports inside blocks of code!
+
 
 
 // 👉 TASK 1- Test out the following endpoints:
