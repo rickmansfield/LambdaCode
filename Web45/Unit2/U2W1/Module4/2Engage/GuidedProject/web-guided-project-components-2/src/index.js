@@ -62,9 +62,14 @@ console.log('2 We requested data with axios');
 //  * With JS using the native fetch [STRETCH]
 
 
+
+//DONE I like postman and HTTPie for different reasons
+
+
 // 👉 TASK 2- Select the "entry point", the element
 // inside of which we'll inject our dog cards 
-const entryPoint = null
+const entryPoint = document.querySelector('.entry');
+
 
 
 // 👉 TASK 3- `dogCardMaker` takes an object and returns a Dog Card.
