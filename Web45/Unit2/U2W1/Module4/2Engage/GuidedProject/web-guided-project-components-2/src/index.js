@@ -102,6 +102,10 @@ function dogCardMaker({ imageURL, breed }) {
 //    * Traditional way: put another script tag inside index.html (`https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js`)
 //    * Proyects with npm: install it with npm and import it into this file
 
+//DONE - See Lines 1-2 for:
+// import axios from 'axios';
+// console.log(axios);
+
 
 // 👉 TASK 5- Fetch dogs from `https://dog.ceo/api/breed/{breed}/images/random/{number}`
 //    * ON SUCCESS: use the data to create dogCards and append them to the entry point
