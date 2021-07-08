@@ -130,6 +130,22 @@ axios.get('https://dog.ceo/api/breed/boxer/images/random/6')
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
 // that takes a breed and a count (of dogs)
+function getDogs(breed, count) {
+  axios.get(`https://dog.ceo/api/api/breed/${breed}/images/random/${count}`)
+  .then(res => {
+    res.data.message.forEach(imageURL => {
+      const dogCard = dogCardMaker({ imageURL, breed });
+      entryPoint.appendChild(dogCard);
+    });
+  })
+  .catch(err => {
+    console.log(err);
+  })
+  .finally(() => {
+    console.log('done');
+  });
+}
+// getDogs('mastiff', 4);
 
 
 // 👉 (OPTIONAL) TASK 7- Put a button in index.html to 'get dogs' and add a click
