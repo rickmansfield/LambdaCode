@@ -1,0 +1,19 @@
+{
+  "name": "web-guided-project-components-2",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LambdaSchool/web-guided-project-components-2.git"
+  }
+}
