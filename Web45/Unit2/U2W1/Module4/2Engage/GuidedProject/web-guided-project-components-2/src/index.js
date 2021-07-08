@@ -111,6 +111,21 @@ function dogCardMaker({ imageURL, breed }) {
 //    * ON SUCCESS: use the data to create dogCards and append them to the entry point
 //    * ON FAILURE: log the error to the console
 //    * IN ANY CASE: log "done" to the console
+axios.get('https://dog.ceo/api/breed/boxer/images/random/6')
+.then(res => {//inside there curly brackets is wehre we have access to the data which comes from your api... this dat goes into the fuctionMaker
+  // debugger
+  const images = res.data.message; //which via debugger we determined was an array of images.
+  console.log(images);//just to check
+  images.forEach(image => {
+    //make a dog card
+    //append it to the DOM
+    entryPoint.append(dogCardMaker({ imageURL: image , breed: 'boxer' }));
+  });
+})
+.catch(err => {
+  debugger
+});
+
 
 
 // 👉 (OPTIONAL) TASK 6- Wrap the fetching operation inside a function `getDogs`
