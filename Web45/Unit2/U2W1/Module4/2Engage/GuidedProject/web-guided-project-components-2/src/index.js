@@ -152,18 +152,22 @@ function getDogs(breed, count) {
 // event listener that executes `getDogs`
 
 const getDogsButton = document.createElement('button');
-getDogsButton.textContent = 'Get Dogs';
-entryPoint.appendChild(getDogsButton);
-
 getDogsButton.addEventListener('click', () =>{
   getDogs('mastiff', 3);
   getDogs('australian', 3);
 });
-// getDogsButton.onclick = () => {
-//   getDogs(`mastiff`, 3); 
-//   getDogs(`australian`, 3);
-// };
+entryPoint.appendChild(getDogsButton);
+getDogsButton.textContent = 'Get Dogs';
 
 // 👉 (OPTIONAL) TASK 8- Import the breeds from `breeds.js`
 // or request them from https://lambda-times-api.herokuapp.com/breeds
 // and loop over them, fetching a dog at each iteration
+export const breeds = [
+  'mastiff',
+  'affenpinscher',
+  'australian',
+  'mexicanhairless',
+  'cocker',
+].forEach(dog => {
+  getDogs({ breed: dog, count: 3});
+});
