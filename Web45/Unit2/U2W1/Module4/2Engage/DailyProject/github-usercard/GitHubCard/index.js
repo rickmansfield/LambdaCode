@@ -68,6 +68,17 @@ function gitHubCardMaker(object){
   cardInfo.classList.add('card-info');
   h3.classList.add('name');
   pUserName.classList.add('username');
+
+  cardNode.appendChild(img);
+  cardNode.appendChild(cardInfo);
+  cardInfo.appendChild(h3);
+  cardInfo.appendChild(pUserName);
+  cardInfo.appendChild(pLocation);
+  cardInfo.appendChild(pProfile);
+  cardInfo.appendChild(aProfileURL);
+  cardInfo.appendChild(pFollowers);
+  cardInfo.appendChild(pFollowing);
+  cardInfo.appendChild(pBio);
 /*
   List of LS Instructors Github username's:
     tetondan
