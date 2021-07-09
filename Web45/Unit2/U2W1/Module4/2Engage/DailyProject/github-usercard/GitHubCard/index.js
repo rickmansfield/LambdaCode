@@ -3,12 +3,12 @@
     (replacing the placeholder with your Github name):
     https://api.github.com/users/<your name>
 */
-
+// Used HTTPie to pull up the reques, startline, headers etc. 
 /*
   STEP 2: Inspect and study the data coming back, this is YOUR
     github info! You will need to understand the structure of this
     data in order to use it to build your component function
-
+//RICKS NOTES: The structure looks like an object of ky value pairs. 
     Skip to STEP 3.
 */
 
