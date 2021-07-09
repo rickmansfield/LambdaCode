@@ -79,6 +79,23 @@ function gitHubCardMaker(object){
   cardInfo.appendChild(pFollowers);
   cardInfo.appendChild(pFollowing);
   cardInfo.appendChild(pBio);
+
+  img.setAttribute('src', object.avatar_url);
+// img.src = object.avatar_url;
+h3.textContent = object.name;
+pUserName.textContent = object.login;
+pLocation.textContent = object.location;
+pProfile.textContent = 'Profile: ';
+aProfileURL.setAttribute('href', object.html_url);
+//aProfileURL.href = object.html_url;
+aProfileURL.textContent = object.html_url;
+pFollowers.textContent = `Followers: ${object.followers}`;
+pFollowing.textContent = `Following: ${object.following}`;
+pBio.textContent = `Bio: ${object.bio}`;
+
+
+return cardNode;
+}
 /*
   List of LS Instructors Github username's:
     tetondan
