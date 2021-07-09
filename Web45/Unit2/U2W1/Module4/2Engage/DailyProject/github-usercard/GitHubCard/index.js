@@ -50,6 +50,21 @@ const followersArray = [];
     </div>
 */
 
+function gitHubCardMaker(object){
+  const cardNode = document.createElement('div');
+  console.log(cardNode);
+  const img = document.createElement('img');
+  const cardInfo = document.createElement('div');
+  const h3 = document.createElement('h3');
+  const pUserName = document.createElement('p');
+  const pLocation = document.createElement('p');
+  const pProfile = document.createElement('p');
+  const aProfileURL = document.createElement('a');
+  const pFollowers = document.createElement('p');
+  const pFollowing = document.createElement('p');
+  const pBio = document.createElement('p');
+  
+
 /*
   List of LS Instructors Github username's:
     tetondan
