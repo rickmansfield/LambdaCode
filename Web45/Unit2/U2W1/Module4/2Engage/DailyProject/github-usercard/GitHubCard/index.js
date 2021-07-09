@@ -64,7 +64,10 @@ function gitHubCardMaker(object){
   const pFollowing = document.createElement('p');
   const pBio = document.createElement('p');
   
-
+  cardNode.classList.add('card');
+  cardInfo.classList.add('card-info');
+  h3.classList.add('name');
+  pUserName.classList.add('username');
 /*
   List of LS Instructors Github username's:
     tetondan
