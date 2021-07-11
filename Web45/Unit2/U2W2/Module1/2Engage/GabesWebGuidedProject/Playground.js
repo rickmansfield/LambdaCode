@@ -9,8 +9,25 @@
   - We use the dedicated "state updater" to schedule a state change: `setHealthPoints(healthPoints + 1)`
 */
 
-import React from 'react';
+import React, { useState } from 'react';
 export default function Playground(props){
+  //useState allows to set insternal state
+  // it is a function that takes that desired initial state and returns an array with 2 things: the state itself and a state changer (which is a call back that allows the state to be mondified)
+  //So no more DECLARING VARIABLES to hold state like with "let" or "const." 
+  //Here is that old way
+  // const theArray = useState(0);
+  // const count = theArray[0];
+  // const setCount = theArray[1];
+  
+  //Rather here is the new way...
+  const [count, setCount] = useState(0)
+
   // return 'playground for ' + props.cohort;
-  return <div className="container"></div>
+  return (
+  <div className="container" id={`cohort` + props.cohort}>
+    <h3>Playground for Web {props.cohort}</h3>
+    <div>the count is {count} </div>
+    <button onClick={event =>{ setCount(count + 1) }}>increase</button>
+  </div>
+  )
 }
