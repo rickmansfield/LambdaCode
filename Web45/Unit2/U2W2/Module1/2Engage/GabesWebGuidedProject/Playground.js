@@ -20,7 +20,19 @@ export default function Playground(props){
   // const setCount = theArray[1];
   
   //Rather here is the new way...
-  const [count, setCount] = useState(0)
+  //note you can see these results in the Chrome Dev Tools under "Components">>hooks
+  const [count, setCount] = useState(0);
+  const [spinnerOn, setSpinnerOn] = useState(true);
+  const [weapon, setWeapon] = useState('scissors');
+  if (spinnerOn) {
+    return (
+      <div className='container'>
+        Hold Your Horses Loading...
+        <button onClick={event =>{setSpinnerOn(false)}}>turn spinner off?</button>
+      </div>
+      
+    )
+  }
 
   // return 'playground for ' + props.cohort;
   return (
@@ -28,6 +40,14 @@ export default function Playground(props){
     <h3>Playground for Web {props.cohort}</h3>
     <div>the count is {count} </div>
     <button onClick={event =>{ setCount(count + 1) }}>increase</button>
+
+    <button onClick={event =>{setSpinnerOn(!spinnerOn)}}>toggle spinner</button>
+
+    <div>The current weapon is {weapon}</div>
+    <button onClick={event => setWeapon('scissors')}>pick scissors</button>
+    <button onClick={event => setWeapon('rock')}>pick rock</button>
+    <button onClick={event => setWeapon('paper')}>pick paper</button>
+    
   </div>
   )
 }
