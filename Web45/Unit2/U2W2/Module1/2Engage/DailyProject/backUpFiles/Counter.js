@@ -51,7 +51,7 @@ import React, {useState} from 'react'; /* STEP 0 */
 export default function Counter() {
   /* STEP 1 */
   const [count, setCount] = useState(0);
-  const even = (count % 2 === 0)
+  const even = (count % 2 === 0);
 
   const increment = () => {
     setCount( count + 1 );
