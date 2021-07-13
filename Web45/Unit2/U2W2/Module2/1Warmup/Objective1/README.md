@@ -14,9 +14,13 @@ When JavaScript was first introduced, inserting it into a web application meant 
 
 Then, a little over ten years ago, developers used module patterns like IIFE (Immediately Invoked Function Expression, pronounced 'iffy'). This function runs as soon as it is defined. Take the seemingly normal looking code below. On closer inspection, you'll notice the enclosing parentheses wrapping the anonymous function, as well as another set of calling parentheses, which results in the immediate execution of the code. While this keeps the global space tidy and grants privacy to any inner variables, it's somewhat fragile and none too eloquent.
 
+
+```js
 (function() {
   //lexically enclosed function statement
 })();
+```
+
 You can read more about the history of programming modules and IIFE here (Links to an external site.)
 
 ### Server side JS
