@@ -2,6 +2,10 @@
 
 - demonstrate the ability to compose React components to build out a UI
 
+- [Objective 3](#objective-3)
+  - [Overview](#overview)
+  - [Follow Along](#follow-along)
+  - [Challenge](#challenge)
 ## Overview
 Now that we know all about functional components and how to pass arguments (props) through to those components and render those props data to the screen using JSX, we're going to learn all about nesting components that may rely on one or another prop value from a parent component.﻿
 
