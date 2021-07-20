@@ -19,8 +19,8 @@ export default function FriendForm(props) {
     // 🔥 STEP 7 - IMPLEMENT the submit handler
     // a) don't allow the browser to reload!
     // c) use the `submit` callback coming in through props
-    submit()
     evt.preventDefault()
+    submit()
   }
 
   return (
@@ -72,7 +72,7 @@ export default function FriendForm(props) {
         </label>
 
         <div className='submit'>
-          <button>submit</button>
+          <button disabled={!values.email || !values.username || !values.role}>submit</button>
         </div>
       </div>
     </form>
