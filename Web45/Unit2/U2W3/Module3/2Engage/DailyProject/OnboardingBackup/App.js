@@ -34,7 +34,7 @@ export default function App() {
     axios
       .get("https://reqres.in/api/users")
       .then((res) => {
-        setUsers(res.data);
+        setUsers(res.data.data);
         console.log(`HERE IS setUsers`, setUsers);
       })
       .catch((err) => {
@@ -47,7 +47,7 @@ export default function App() {
     axios
       .post("https://reqres.in/api/users", newUser)
       .then((res) => {
-        setUsers([...users, res.data]);
+        setUsers([...users, res.data.data]);
         setFormValues(initialFormValues);
       })
       .catch((err) => {
@@ -113,9 +113,18 @@ export default function App() {
       </header>
       <Form
         values={formValues}
-        // update={updateForm}
+        change={inputChange}
         submit={formSubmit}
+        disabled={disabled}
+        errors={formErrors}
       />
+      {
+        users.map(user => {
+          return (
+            <User key={user.id} details={user} />
+          )
+        })
+      }
     </div>
-  );
+  )
 }
