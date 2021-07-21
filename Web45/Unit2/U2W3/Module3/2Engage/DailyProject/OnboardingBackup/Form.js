@@ -8,18 +8,23 @@ export default function OnboardingForm(props) {
     };
     const onChange = (evt) => {
         const { name, value, type, checked } = evt.target;
-        const valueToUse = type === "checkbox" ? checked : value;
+        const valueToUse = type === "checkbox" ? checked : value
         change(name, valueToUse);
     };
     return (
         <form className="form container" onSubmit={onSubmit}>
             <div className="form-group submit">
+                <div>
                 <h2>Add a User</h2>
+                </div>
+
                 <button disabled={disabled}>submit</button>
+
                 <div className="errors">
-                    {/* <div>{errors.username}</div>
+                    <div>{errors.username}</div>
                     <div>{errors.email}</div>
-                    <div>{errors.password}</div> */}
+                    <div>{errors.password}</div>
+                    {/* <div>{errors.terms}</div> */}
 
                 </div>
             </div>
