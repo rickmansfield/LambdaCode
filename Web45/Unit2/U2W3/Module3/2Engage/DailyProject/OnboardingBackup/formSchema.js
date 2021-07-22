@@ -1,4 +1,5 @@
 import * as yup from 'yup'
+import { boolean } from 'yup/lib/locale'
 
 export default yup.object().shape({
     username: yup
@@ -14,11 +15,8 @@ export default yup.object().shape({
         .min(8).max(16)
         .required('Must provide password'),
     terms: yup
-        .string()
-        .required('Must agree to terms')
+        .boolean()
+        .oneOf([true], 'must agree to terms' )
+        // .required('Must agree to terms')
 
-    //checkboxes are complete
-    // hiking: yup.boolean(),
-    // reading: yup.boolean(),
-    // coding: yup.boolean(),
 })
